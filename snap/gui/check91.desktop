@@ -1,13 +1,8 @@
-[Desktop Entry]
-Version=1.0.5
-Name=Check91App
-Comment=This Flutter Demo app
-Exec=check91
-Icon=${SNAP}/meta/gui/icon.png
-Terminal=false
-Type=Application
-Categories=Utility;Application;
-
-
-
-
+  [Desktop Entry]
+  Name=Check91
+  Comment=check91 that does everything
+  Exec=check91
+  Icon=${SNAP}/meta/gui/icon.png # replace name to your app name
+  Terminal=false
+  Type=Application
+  Categories=Education; #adjust accordingly your snap category

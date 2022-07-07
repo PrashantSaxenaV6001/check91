@@ -1,23 +1,29 @@
 name: check91
-version: 1.0.10
-summary: Flutter Demo check91 Application
-description: A demo of check91 Application using Flutter
-confinement: strict
-base: core20
-grade: stable
-icon: snap/gui/icon.png
+version: 0.1.0
+summary: Super Cool App
+description: Super Cool App that does everything!
+#icon: snap/gui/icon.png
 
+confinement: strict
+base: core18
+grade: stable
+
+slots:
+  dbus-super-cool-app: # adjust accordingly to your app name
+    interface: dbus
+    bus: session
+    name: org.bar.check91 # adjust accordingly to your app name and
 
 apps:
   check91:
-    command: check91-app
-    extensions: [flutter-master]
+    command: check91
+    extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
     plugs:
       - network
-      - desktop
-
+    slots:
+      - dbus-check91
 parts:
   check91:
-    source: .
+    source: https://github.com/PrashantSaxenaV6001/check91.git
     plugin: flutter
     flutter-target: lib/main.dart # The main entry-point file of the application
