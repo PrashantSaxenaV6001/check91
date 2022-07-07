@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0.5
+Name=Check91App
+Comment=This Flutter Demo app
+Exec=check91
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+
+
+
+
